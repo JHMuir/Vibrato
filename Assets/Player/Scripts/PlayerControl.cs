@@ -8,7 +8,7 @@ public class PlayerControl : MonoBehaviour{
     private SpriteRenderer sprite;
 
     [Header("Stats")]
-    public float speed = 100.0f;
+    public float speed = 25.0f;
     public float airControl = 0.5f;
     public float jumpPower = 100.0f;
 
@@ -25,12 +25,18 @@ public class PlayerControl : MonoBehaviour{
     }
 
     void Move(){
-        float horizontalMove = Input.GetAxis("Horizontal");
+        Vector2 horizontalMove = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        float moveForce = horizontalMove * speed * Time.deltaTime;
+        body2D.position += horizontalMove * speed * Time.deltaTime;
+        //float moveForce = horizontalMove * speed * Time.deltaTime;
 
-        body2D.AddForce(Vector2.right * moveForce, ForceMode2D.Impulse);
+        //body2D.AddForce(Vector2.right * moveForce, ForceMode2D.Impulse);
 
-        sprite.flipX = horizontalMove < 0;
+        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)){
+            sprite.flipX = true;
+        }
+        if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)){
+            sprite.flipX = false;
+        }
     }
 }
