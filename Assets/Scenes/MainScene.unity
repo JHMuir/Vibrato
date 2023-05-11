@@ -156,8 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  airControl: 0.5
-  jumpPower: 100
+  airControl: 0.8
+  jumpPower: 8
+  inAir: 0
 --- !u!50 &437157573
 Rigidbody2D:
   serializedVersion: 4
