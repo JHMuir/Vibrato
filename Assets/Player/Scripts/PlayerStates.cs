@@ -5,4 +5,5 @@ using UnityEngine;
 public class PlayerStates : MonoBehaviour
 {
     public bool jumping;
+    public bool dashing;
 }
