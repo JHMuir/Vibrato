@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashTime;
     [SerializeField] private float dashCooldown;
+    [SerializeField] GameObject dashEffect;
     private bool dashed;
     [Space(3)]
 
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
         UpdateJump();
 
         if(pState.dashing) return;
+        Flip();
         Move();
         Jump();
         StartDash();
@@ -85,19 +87,24 @@ public class PlayerController : MonoBehaviour
         xAxis = Input.GetAxisRaw("Horizontal");
     }
 
+    void Flip()
+    {
+        if(xAxis < 0)
+        {
+            //sprite.flipX = true;
+            transform.localScale = new Vector2(-1, transform.localScale.y);
+        }
+        else if(xAxis > 0)
+        {
+            //sprite.flipX = false;
+            transform.localScale = new Vector2(1, transform.localScale.y);
+        }
+    }
+
     void Move()
     {
         rb.velocity = new Vector2(walkSpeed * xAxis, rb.velocity.y);
         anim.SetBool("Walking", rb.velocity.x != 0 && Grounded());
-
-        if(xAxis < 0)
-        {
-            sprite.flipX = true;
-        }
-        else if(xAxis > 0)
-        {
-            sprite.flipX = false;
-        }
     }
 
     void StartDash()
@@ -120,12 +127,13 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("Dashing");
         rb.gravityScale = 0;
         rb.velocity = new Vector2(transform.localScale.x * dashSpeed, 0);
-        //if(Grounded()) Instantiate(dashEffect, transform);
-        //yield return new WaitForSeconds(dashTime);
+        if(Grounded()) Instantiate(dashEffect, transform);
+        yield return new WaitForSeconds(dashTime);
         rb.gravityScale = gravity;
         pState.dashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+        anim.ResetTrigger("Dashing");
     }
 
     void Jump()

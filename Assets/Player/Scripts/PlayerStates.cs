@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class PlayerStates : MonoBehaviour
 {
-    public bool jumping;
-    public bool dashing;
+    public bool jumping = false;
+    public bool dashing = false;
 }
