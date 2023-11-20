@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxAirJumps;
     [Space(3)]
 
+    [Header("Attack Settings")]
+    bool attack;
+    float timeBetweenAttack, timeSinceAttack;
+
     [Header("Ground Check Settings")]
     [SerializeField] private Transform groundCheckPoint;
     [SerializeField] private float groundCheckY;
@@ -79,12 +83,14 @@ public class PlayerController : MonoBehaviour
         Move();
         Jump();
         StartDash();
+        Attack();
         
     }
 
     void GetInput()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
+        attack = Input.GetMouseButtonDown(0);
     }
 
     void Flip()
@@ -134,6 +140,15 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
         anim.ResetTrigger("Dashing");
+    }
+
+    void Attack()
+    {
+        timeSinceAttack += Time.deltaTime;
+        if(attack && timeSinceAttack >= timeBetweenAttack){
+            timeSinceAttack = 0;
+            anim.SetTrigger("Attacking");
+        }
     }
 
     void Jump()

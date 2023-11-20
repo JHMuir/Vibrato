@@ -1,0 +1,2477 @@
+fileFormatVersion: 2
+guid: 8e9ff6257056e0244bd5c9277c12bd1b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1204dcc675756cd4fa4bfc39d3293430
+      internalID: 1164494404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 486
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700a76a893ac00c45af6c9da963ca9cc
+      internalID: 1995617722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 486
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c7de357d5977d40b7e06761d9fa1d8
+      internalID: -610916702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 485
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c343a5bff56d9241b978e99903e21ba
+      internalID: 416216296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 485
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4429b7b1f25bc9442bff90b8e7ed4b53
+      internalID: 656694839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 501
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801d679beb1ae8e48adf01ebad094d37
+      internalID: 120896548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 486
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262c5f6a4f7594c49b00489929288c27
+      internalID: -1460257583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 503
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c602d86925ac7134ca4b7a5abcb263a1
+      internalID: -1133388679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 485
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57e6d7036348c74ab931d1db031ae61
+      internalID: -393067538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 484
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e47d429d828be459b48de7332d99ad
+      internalID: -2037441406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 488
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d621ca3aafa04c885a9051abc2074
+      internalID: -57562234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 489
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6beac6f5a8532bb4b9bb6f8b547fc8da
+      internalID: 445618294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae7ad3868ff73d4bb6fd9134f4f6f26
+      internalID: 1446436031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 435
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26e62cac9b7f46478df555f78f93f3c
+      internalID: 2046362630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 435
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cc8c324bf25ab4ca9cb39117bb7444
+      internalID: -956239688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 433
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896a4d20e1fa999429c6242b66fff35a
+      internalID: -1121320278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 430
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafad4f8826474546ae3b43813797bd6
+      internalID: 1534476683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 431
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df300d105c2b5541839089fc2ab23a4
+      internalID: -159918867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 438
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec08b2ac4af45947ad25ee39198b59c
+      internalID: 1293259813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 428
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517475648db286e49b5654b54cc7fa46
+      internalID: -1807691304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 427
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705ee5cf4fd83304a9f7ea69979f4b5e
+      internalID: -836400676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 404
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0277a865b79b0e84a928340695db7a6a
+      internalID: -1136191336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 73
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253289ff9d4cd474496d2019c1718db3
+      internalID: 1942408443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 313
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acf058290ca251458d0f4d2ff7b14ec
+      internalID: -317644777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 386
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f50669df5ea51246a3b1c896b601fca
+      internalID: 997269751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 379
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970b41debf7e0344eb177f32d15296b8
+      internalID: -1784347899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 359
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38289a6aeb2054a49a4e1ba61a6baaad
+      internalID: -76218531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 356
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84ed2cb20d841a49b89637a6898707f
+      internalID: -1603100545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 351
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1391e519493db47881c0308c0fe863
+      internalID: 1701993724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 361
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b025c2494b66743bb90eade4e6fbf7
+      internalID: -2101524671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 366
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700c91737bfc36e4a95192476a651cb1
+      internalID: 1304062728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 367
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8615fab18d5f64742a72a86712c39e16
+      internalID: 646500459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 378
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cacc56e537716b4a93b75a2df7664cf
+      internalID: -1764267112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 365
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bbc134ab8ecbf42863d50a90e45cc3
+      internalID: 23227930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 338
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3272a2b85f5424788d49f328cbfb8b
+      internalID: -3003912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 368
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a341d4b4bb09c1418e1e12743860cb6
+      internalID: -143288637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 358
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dabf6b11cf167e43a1768096a9b4fb9
+      internalID: -209284833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 349
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059344fb85973d944ab147b9142593cc
+      internalID: -439005987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 354
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc254668f1d27344fb3174e324599d2d
+      internalID: -1898395231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 348
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f59f76aee7ae3418eef6d2f5bfcd51
+      internalID: 2103431351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 334
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7abf945377d0d4ea8e566e84e3ac6b
+      internalID: -1016046160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 321
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f28886aa5b13442a571bc8603274cb
+      internalID: 1535481877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 329
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac1b61aa9dfb104d9b6a8b2d5095e6e
+      internalID: -662068383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dcf94334cf7dc49bf23d8a01e1b877
+      internalID: -1302359223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 251
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3b8094eb4dd05488881e67ebe0899d
+      internalID: -421165426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 252
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c51654bf8763c49b78939dfd5c4795
+      internalID: 1512935853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 285
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c93ca46615a47a4d912baa36bbfe2a0
+      internalID: 1847459153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 252
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239d5001d00d27e4a8029c980ed42ad0
+      internalID: -545169667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 256
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63db97e2b87ebc54cb0c8d5e97d90f1e
+      internalID: 1781570256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 287
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd32cb37a672b9468b47e06c6f0d9aa
+      internalID: 1353676047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 252
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9e3c4333ee5a24ba182d898f426240
+      internalID: 911024739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 256
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf4b008a5579d4438c212a295f9b5cc
+      internalID: 74402607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 256
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5e0b4b60fc3dd4c93a1c69a4ebf54b
+      internalID: 1422440034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 255
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a58a429b1591f48a7f5bd9a8d65322
+      internalID: 1942694124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 253
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65ee616306fd064b9fd4c2d0f749a6e
+      internalID: -809354865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 271
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a935f18d1e5d86f44a6d23e8016a7d28
+      internalID: 1381502087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 260
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829a70f8cfb680b47a222a68f6e37993
+      internalID: 1785126920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fb5166f48885648b34d905b0ae4749
+      internalID: -1229983190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 195
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77fa6ddb3f947a46a440966e72b8cf6
+      internalID: -617103671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 192
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb876d47ce90854b889f2a6e2de4807
+      internalID: -31497643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 235
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ecf2cdeb2decf4583904706a8e2493
+      internalID: -1452546427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 240
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2c33ed41bb0a948b1d7bffd0b99d1d
+      internalID: -46910525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 196
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0ca1dd0c62c9546976c14c5b3d8fe7
+      internalID: -1442144487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 183
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6a5046cfbe23e499d5f435b7bd1405
+      internalID: -1355877167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 241
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16afa7c5ffb9afa48bc17b06980901ae
+      internalID: -2062510557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 196
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014b805d40ad5fb479762d881e269947
+      internalID: 218840918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 196
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5b57761fcb0bd4f9617669e584f5c9
+      internalID: -1563570623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 197
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0715e5244c21b47a872baf888ee311
+      internalID: -366137206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 198
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bd45bea0773c948b367871f99ec66a
+      internalID: 1973706119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 195
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95c34a3d87184d46ba384e5f878865d
+      internalID: 1566851877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 220
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326ea9d51d2bce84bb12f4568c83c5b1
+      internalID: 2069286057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 225
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a57bb4bb6e8d342b1c709c26bc4842
+      internalID: 521045613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 195
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37009098b8a2904e8d100ead4167294
+      internalID: -1768100187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 191
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676dea3ecc281504685cd1ba768eb4c8
+      internalID: 392823035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 199
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3c0732dca383f4f9d423e78450cd9e
+      internalID: -309845296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 199
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f75c4d50c56b0346a35178d8d7abeb8
+      internalID: -1143183470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 191
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9174a2ae422128148af7c0dff4c5675a
+      internalID: -1577993394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1aacde9f5605dd42ab694eea6d86d9f
+      internalID: -993548848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 111
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5135c9e4f5ea94a8066b1a0b5e7629
+      internalID: -167188245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 93
+        width: 73
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f9239811114944dba53df9c00ff99a
+      internalID: -1854600632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 101
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97f0f9a165c26a45bb012674a7c57b1
+      internalID: -1856615597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 174
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aba9f39a27848e4c81e9dcf4bf1b8c8
+      internalID: -2112194455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 167
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4b26a0d9416354da9ca4af71f97c82
+      internalID: 1128520710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 147
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd5bfd54e9591c46b289e0c0a2f6ac7
+      internalID: -1642068121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 147
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b104b93a1dbf4ed4197e77f2eab47053
+      internalID: -387858475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 144
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca0e0b28f26a184e971171dc4f8c5dc
+      internalID: -1902647011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 166
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a398ab27be20c9746ab8df5cccb82e81
+      internalID: 1330054475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 153
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a3df1f402e3f64b9748aa023d99e9e
+      internalID: 1341977842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 126
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab42c2403cf51064f8977525477728ed
+      internalID: -1542047682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 156
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34418591f9603a4f9c42d8dc640239c
+      internalID: -724083020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5737b5b7dd6b704a87611eaf4c254cf
+      internalID: -2137016215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 137
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bafaace052a1724c9dcb62c876333ce
+      internalID: -1136981554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 142
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ed3feaba0c5d54bb7adf936ac52086
+      internalID: -959531484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 136
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4bf4996b2e02241ae43f44207eb283
+      internalID: -1594023439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 122
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96142a694e3c1194f853d391041bd96c
+      internalID: 1644661642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 109
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d4a781e7e9eea4bb06eaefcf26bcc4
+      internalID: 952651740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 117
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae0b1fad9f9bfc4b8c56e26d6b28b39
+      internalID: 1669778141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aff7c4081bc054ea36e2536b4e822e
+      internalID: -475164009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 50
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a42b62429b7b2489f08dafb91bed62
+      internalID: 761028270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 49
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d6662bf0deffe42ac9efa4a9413148
+      internalID: 1228906272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 58
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ec1bb66924b484190fb199604dd2c5
+      internalID: -89405946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 50
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a217d50d95848345b79da2792b191e6
+      internalID: -1889513712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 52
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b047c61bd6701f44ab719cc518e72a5
+      internalID: 848977022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 50
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f862de7621e17c4fba84790b7e1c09a
+      internalID: 1707304731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 49
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f07d9b6c1c11b640814ecce3874faca
+      internalID: -1923006046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 50
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108b60eff96cf9c469092a636350dd9c
+      internalID: -1272585350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aria Sprite Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f4e71d7fc69a947b3167771cb33f7a
+      internalID: 79811921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Aria Sprite Sheet_80: -1856615597
+      Aria Sprite Sheet_15: -1121320278
+      Aria Sprite Sheet_18: 1293259813
+      Aria Sprite Sheet_91: -1136981554
+      Aria Sprite Sheet_1: 1995617722
+      Aria Sprite Sheet_60: -1452546427
+      Aria Sprite Sheet_67: -366137206
+      Aria Sprite Sheet_79: -1854600632
+      Aria Sprite Sheet_46: 1847459153
+      Aria Sprite Sheet_23: -317644777
+      Aria Sprite Sheet_68: 1973706119
+      Aria Sprite Sheet_30: 1304062728
+      Aria Sprite Sheet_52: 1422440034
+      Aria Sprite Sheet_86: 1330054475
+      Aria Sprite Sheet_62: -1442144487
+      Aria Sprite Sheet_51: 74402607
+      Aria Sprite Sheet_50: 911024739
+      Aria Sprite Sheet_58: -617103671
+      Aria Sprite Sheet_93: -1594023439
+      Aria Sprite Sheet_78: -167188245
+      Aria Sprite Sheet_42: -662068383
+      Aria Sprite Sheet_83: -1642068121
+      Aria Sprite Sheet_10: -57562234
+      Aria Sprite Sheet_31: 646500459
+      Aria Sprite Sheet_8: -393067538
+      Aria Sprite Sheet_92: -959531484
+      Aria Sprite Sheet_13: 2046362630
+      Aria Sprite Sheet_63: -1355877167
+      Aria Sprite Sheet_22: 1942408443
+      Aria Sprite Sheet_45: 1512935853
+      Aria Sprite Sheet_14: -956239688
+      Aria Sprite Sheet_33: 23227930
+      Aria Sprite Sheet_61: -46910525
+      Aria Sprite Sheet_70: 2069286057
+      Aria Sprite Sheet_55: 1381502087
+      Aria Sprite Sheet_102: 848977022
+      Aria Sprite Sheet_4: 656694839
+      Aria Sprite Sheet_48: 1781570256
+      Aria Sprite Sheet_53: 1942694124
+      Aria Sprite Sheet_49: 1353676047
+      Aria Sprite Sheet_54: -809354865
+      Aria Sprite Sheet_96: 1669778141
+      Aria Sprite Sheet_44: -421165426
+      Aria Sprite Sheet_88: -1542047682
+      Aria Sprite Sheet_16: 1534476683
+      Aria Sprite Sheet_12: 1446436031
+      Aria Sprite Sheet_104: -1923006046
+      Aria Sprite Sheet_2: -610916702
+      Aria Sprite Sheet_81: -2112194455
+      Aria Sprite Sheet_94: 1644661642
+      Aria Sprite Sheet_17: -159918867
+      Aria Sprite Sheet_6: -1460257583
+      Aria Sprite Sheet_84: -387858475
+      Aria Sprite Sheet_27: -1603100545
+      Aria Sprite Sheet_7: -1133388679
+      Aria Sprite Sheet_97: -475164009
+      Aria Sprite Sheet_75: -1143183470
+      Aria Sprite Sheet_99: 1228906272
+      Aria Sprite Sheet_39: 2103431351
+      Aria Sprite Sheet_71: 521045613
+      Aria Sprite Sheet_38: -1898395231
+      Aria Sprite Sheet_47: -545169667
+      Aria Sprite Sheet_40: -1016046160
+      Aria Sprite Sheet_9: -2037441406
+      Aria Sprite Sheet_69: 1566851877
+      Aria Sprite Sheet_35: -143288637
+      Aria Sprite Sheet_29: -2101524671
+      Aria Sprite Sheet_32: -1764267112
+      Aria Sprite Sheet_65: 218840918
+      Aria Sprite Sheet_57: -1229983190
+      Aria Sprite Sheet_66: -1563570623
+      Aria Sprite Sheet_77: -993548848
+      Aria Sprite Sheet_105: -1272585350
+      Aria Sprite Sheet_74: -309845296
+      Aria Sprite Sheet_106: 79811921
+      Aria Sprite Sheet_5: 120896548
+      Aria Sprite Sheet_21: -1136191336
+      Aria Sprite Sheet_72: -1768100187
+      Aria Sprite Sheet_95: 952651740
+      Aria Sprite Sheet_37: -439005987
+      Aria Sprite Sheet_59: -31497643
+      Aria Sprite Sheet_3: 416216296
+      Aria Sprite Sheet_41: 1535481877
+      Aria Sprite Sheet_28: 1701993724
+      Aria Sprite Sheet_36: -209284833
+      Aria Sprite Sheet_20: -836400676
+      Aria Sprite Sheet_101: -1889513712
+      Aria Sprite Sheet_98: 761028270
+      Aria Sprite Sheet_26: -76218531
+      Aria Sprite Sheet_76: -1577993394
+      Aria Sprite Sheet_25: -1784347899
+      Aria Sprite Sheet_89: -724083020
+      Aria Sprite Sheet_82: 1128520710
+      Aria Sprite Sheet_24: 997269751
+      Aria Sprite Sheet_43: -1302359223
+      Aria Sprite Sheet_34: -3003912
+      Aria Sprite Sheet_56: 1785126920
+      Aria Sprite Sheet_11: 445618294
+      Aria Sprite Sheet_90: -2137016215
+      Aria Sprite Sheet_103: 1707304731
+      Aria Sprite Sheet_19: -1807691304
+      Aria Sprite Sheet_100: -89405946
+      Aria Sprite Sheet_73: 392823035
+      Aria Sprite Sheet_85: -1902647011
+      Aria Sprite Sheet_0: 1164494404
+      Aria Sprite Sheet_64: -2062510557
+      Aria Sprite Sheet_87: 1341977842
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
