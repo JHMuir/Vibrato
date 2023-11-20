@@ -28,9 +28,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxAirJumps;
     [Space(3)]
 
-    [Header("Attack Settings")]
-    bool attack;
-    float timeBetweenAttack, timeSinceAttack;
+    [Header("Attack Settings - Pick")]
+    [SerializeField] private bool attack = false;
+    [SerializeField] private float timeBetweenAttack, timeSinceAttack;
 
     [Header("Ground Check Settings")]
     [SerializeField] private Transform groundCheckPoint;
@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
     [Space(3)]
 
     //References
+    public ProjectileBehavior ProjectilePrefab;
+    public Transform LaunchOffset;
     private float xAxis;
     private float gravity;
     private Rigidbody2D rb;
@@ -83,14 +85,14 @@ public class PlayerController : MonoBehaviour
         Move();
         Jump();
         StartDash();
-        Attack();
+        Pick();
         
     }
 
     void GetInput()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
-        attack = Input.GetMouseButtonDown(0);
+        attack = Input.GetButtonDown("Pick");
     }
 
     void Flip()
@@ -142,13 +144,14 @@ public class PlayerController : MonoBehaviour
         anim.ResetTrigger("Dashing");
     }
 
-    void Attack()
+    void Pick()
     {
         timeSinceAttack += Time.deltaTime;
         if(attack && timeSinceAttack >= timeBetweenAttack){
             timeSinceAttack = 0;
-            anim.SetTrigger("Attacking");
+            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
         }
+        anim.SetBool("Attacking", attack);
     }
 
     void Jump()
