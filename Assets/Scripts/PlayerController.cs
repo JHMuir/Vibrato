@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     //Engine based stats
     [Header("Horizontal Movement Settings")]
     [SerializeField] private float walkSpeed = 1;
+    private bool facingRight = true;
     [Space(3)]
 
     [Header("Dash Settings")]
@@ -28,10 +29,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxAirJumps;
     [Space(3)]
 
-    [Header("Attack Settings - Pick")]
-    [SerializeField] private bool attack = false;
-    [SerializeField] private float timeBetweenAttack, timeSinceAttack;
-
     [Header("Ground Check Settings")]
     [SerializeField] private Transform groundCheckPoint;
     [SerializeField] private float groundCheckY;
@@ -40,8 +37,8 @@ public class PlayerController : MonoBehaviour
     [Space(3)]
 
     //References
-    public ProjectileBehavior ProjectilePrefab;
-    public Transform LaunchOffset;
+    
+
     private float xAxis;
     private float gravity;
     private Rigidbody2D rb;
@@ -81,38 +78,34 @@ public class PlayerController : MonoBehaviour
         UpdateJump();
 
         if(pState.dashing) return;
-        Flip();
         Move();
         Jump();
         StartDash();
-        Pick();
+        //Pick();
         
     }
 
     void GetInput()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
-        attack = Input.GetButtonDown("Pick");
     }
 
     void Flip()
     {
-        if(xAxis < 0)
-        {
-            //sprite.flipX = true;
-            transform.localScale = new Vector2(-1, transform.localScale.y);
-        }
-        else if(xAxis > 0)
-        {
-            //sprite.flipX = false;
-            transform.localScale = new Vector2(1, transform.localScale.y);
-        }
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 
     void Move()
     {
         rb.velocity = new Vector2(walkSpeed * xAxis, rb.velocity.y);
         anim.SetBool("Walking", rb.velocity.x != 0 && Grounded());
+        if(xAxis > 0 && !facingRight){
+            Flip();
+        }
+        else if(xAxis < 0 && facingRight){
+            Flip();
+        }
     }
 
     void StartDash()
@@ -134,7 +127,8 @@ public class PlayerController : MonoBehaviour
         pState.dashing = true;
         anim.SetTrigger("Dashing");
         rb.gravityScale = 0;
-        rb.velocity = new Vector2(transform.localScale.x * dashSpeed, 0);
+        if(facingRight) rb.velocity = new Vector2(transform.localScale.x * dashSpeed, 0);
+        else rb.velocity = new Vector2(-transform.localScale.x * dashSpeed, 0);
         if(Grounded()) Instantiate(dashEffect, transform);
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = gravity;
@@ -144,15 +138,15 @@ public class PlayerController : MonoBehaviour
         anim.ResetTrigger("Dashing");
     }
 
-    void Pick()
+    /*void Pick()
     {
         timeSinceAttack += Time.deltaTime;
         if(attack && timeSinceAttack >= timeBetweenAttack){
             timeSinceAttack = 0;
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            //Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
         }
         anim.SetBool("Attacking", attack);
-    }
+    }*/
 
     void Jump()
     {
