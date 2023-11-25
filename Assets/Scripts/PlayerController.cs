@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     
 
     private float xAxis;
+    private bool onAttack;
     private float gravity;
     private Rigidbody2D rb;
     private Animator anim;
@@ -81,13 +82,14 @@ public class PlayerController : MonoBehaviour
         Move();
         Jump();
         StartDash();
-        //Pick();
+        Pick();
         
     }
 
     void GetInput()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
+        onAttack = Input.GetButtonDown("Pick");
     }
 
     void Flip()
@@ -138,15 +140,10 @@ public class PlayerController : MonoBehaviour
         anim.ResetTrigger("Dashing");
     }
 
-    /*void Pick()
+    void Pick()
     {
-        timeSinceAttack += Time.deltaTime;
-        if(attack && timeSinceAttack >= timeBetweenAttack){
-            timeSinceAttack = 0;
-            //Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-        }
-        anim.SetBool("Attacking", attack);
-    }*/
+        anim.SetBool("Attacking", onAttack);
+    }
 
     void Jump()
     {

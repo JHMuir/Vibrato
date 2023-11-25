@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 956778387}
   - component: {fileID: 956778388}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Aria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 746295498}
   notePrefab: {fileID: 2005738417320436986, guid: 2a049b661f870cb42ac36757dd3e6937, type: 3}
+  attackInterval: 0.5
 --- !u!1 &1090697191
 GameObject:
   m_ObjectHideFlags: 0
