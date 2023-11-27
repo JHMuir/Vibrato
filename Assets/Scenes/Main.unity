@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followSpeed: 1
   offset: {x: 0, y: 0, z: -10}
+  Player: {fileID: 956778380}
 --- !u!1 &569621621
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,8 +232,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 569621622}
-  m_Layer: 0
-  m_Name: Ground Raycast
+  m_Layer: 6
+  m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,7 +247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569621621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.003, y: -0.499, z: 0}
+  m_LocalPosition: {x: 0.003, y: -0.471, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -262,7 +263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746295498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,45 +296,18 @@ GameObject:
   - component: {fileID: 956778385}
   - component: {fileID: 956778384}
   - component: {fileID: 956778383}
+  - component: {fileID: 956778389}
   - component: {fileID: 956778382}
   - component: {fileID: 956778386}
-  - component: {fileID: 956778381}
-  - component: {fileID: 956778387}
+  - component: {fileID: 956778391}
   - component: {fileID: 956778388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Aria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &956778381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956778380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d84b4a9e7d4e554d890df118b6f30fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 10
-  dashSpeed: 50
-  dashTime: 0.2
-  dashCooldown: 0.5
-  dashEffect: {fileID: 6955562230892635411, guid: e9414a89eaed14d42a277bebaa07f319, type: 3}
-  jumpForce: 22
-  jumpBufferFrames: 8
-  coyoteTime: 0.1
-  maxAirJumps: 1
-  groundCheckPoint: {fileID: 569621622}
-  groundCheckY: 0.2
-  groundCheckX: 0.5
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!50 &956778382
 Rigidbody2D:
   serializedVersion: 4
@@ -349,7 +323,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 9.5
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 69716984af9b6524facd0741ee3a5be7, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -368,9 +342,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.009311616}
+  m_Offset: {x: -0.07862121, y: 0.25990808}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.020833334, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.8125, y: 1}
     newSize: {x: 0.8125, y: 1}
@@ -379,7 +353,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.98137677}
+  m_Size: {x: 0.4155023, y: 0.47911668}
   m_EdgeRadius: 0
 --- !u!212 &956778384
 SpriteRenderer:
@@ -441,12 +415,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956778380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0.009, y: 6.619, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 569621622}
   - {fileID: 746295498}
+  - {fileID: 1504971835}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -470,20 +445,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &956778387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956778380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b7f2ad4bb0fe245b07f3334e0d83ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumping: 0
-  dashing: 0
 --- !u!114 &956778388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +460,49 @@ MonoBehaviour:
   firePoint: {fileID: 746295498}
   notePrefab: {fileID: 2005738417320436986, guid: 2a049b661f870cb42ac36757dd3e6937, type: 3}
   attackInterval: 0.5
+--- !u!70 &956778389
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956778380}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08946021, y: -0.1173217}
+  m_Size: {x: 0.44133237, y: 0.7391495}
+  m_Direction: 0
+--- !u!114 &956778391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956778380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2a75115368eaa449f65ee11a238b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 956778382}
+  animator: {fileID: 956778386}
+  jumpForce: 400
+  movementSmoothing: 0.05
+  runSpeed: 40
+  dashSpeed: 40
+  dashTime: 0.2
+  dashCooldown: 1
+  dashEffect: {fileID: 6955562230892635411, guid: e9414a89eaed14d42a277bebaa07f319, type: 3}
+  maxAirJumps: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 63
+  groundCheck: {fileID: 569621622}
+  ceilingCheck: {fileID: 1504971835}
 --- !u!1 &1090697191
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,3 +726,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1504971834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504971835}
+  m_Layer: 6
+  m_Name: CeilingCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504971835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504971834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.003, y: 0.449, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 956778385}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
