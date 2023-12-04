@@ -28,6 +28,10 @@ public class NoteBehavior : MonoBehaviour
             EnemyController enemy = noteHit.GetComponent<EnemyController>();
             if(enemy != null) enemy.TakeDamage(damage, (transform.position - enemy.transform.position).normalized, 100);
        }
+       else if(noteHit.gameObject.CompareTag("Player"))
+       {
+            //do nothing
+       }
        Instantiate(impactEffect, transform.position, transform.rotation);
        Destroy(gameObject);
     }

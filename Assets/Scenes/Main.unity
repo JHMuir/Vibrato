@@ -501,6 +501,7 @@ MonoBehaviour:
   dashCooldown: 0.5
   dashEffect: {fileID: 6955562230892635411, guid: e9414a89eaed14d42a277bebaa07f319, type: 3}
   maxAirJumps: 1
+  recoilForce: 50
   health: 100
   maxHealth: 100
   invincible: 0

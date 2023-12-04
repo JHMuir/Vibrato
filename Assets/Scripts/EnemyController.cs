@@ -40,6 +40,7 @@ public class EnemyController : MonoBehaviour
     {
         health -= damage;  
         if(!isRecoiling) {
+            Debug.Log("Here!");
             rb.AddForce(-hitForce * recoilFactor * hitDirection);
             isRecoiling = true;
         }
@@ -47,12 +48,16 @@ public class EnemyController : MonoBehaviour
 
     protected virtual void OnTriggerStay2D(Collider2D enemyHit)
     {
-        if(enemyHit.CompareTag("Player") && !PlayerController.Instance.invincible) Attack();
+        if(enemyHit.CompareTag("Player") && !PlayerController.Instance.invincible) 
+        {
+            Vector2 playerRecoilDirection = (enemyHit.transform.position - transform.position).normalized;
+            Attack(playerRecoilDirection);
+        }
     }
 
-    protected virtual void Attack()
+    protected virtual void Attack(Vector2 playerRecoilDirection)
     {
-        PlayerController.Instance.TakeDamage(damage);
+        PlayerController.Instance.TakeDamage(damage, playerRecoilDirection);
     }
 }
 

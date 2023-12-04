@@ -1,6 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+//using System.Numerics;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : CharacterController
@@ -18,6 +22,7 @@ public class PlayerController : CharacterController
     //private float coyoteTimeCounter;
     private int airJumpCounter  = 0;
     [SerializeField] private int maxAirJumps = 1;
+    [SerializeField] private float recoilForce = 5f;
     [Space]
 
     [Header("Health Settings")]
@@ -54,6 +59,7 @@ public class PlayerController : CharacterController
     {
         GetInput();
         Die();
+        Debug.Log(Grounded());
     }
 
     void FixedUpdate()
@@ -83,7 +89,7 @@ public class PlayerController : CharacterController
             //And then smoothing it out and applying it to the character
             rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, movementSmoothing);
         }
-        anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        anim.SetBool("Walking", Grounded() && Mathf.Abs(horizontalMove) > 0);
     }
 
     protected override void Jump(bool jump)
@@ -115,7 +121,7 @@ public class PlayerController : CharacterController
     {
         canDash = false;
         isDashing = true;
-        anim.SetTrigger("Dashing");
+        anim.SetBool("Dashing", isDashing);
         rb.gravityScale = 0;
         if(facingRight) rb.velocity = new Vector2(transform.localScale.x * dashSpeed, 0);
         else rb.velocity = new Vector2(-transform.localScale.x * dashSpeed, 0);
@@ -126,20 +132,23 @@ public class PlayerController : CharacterController
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
-        anim.ResetTrigger("Dashing");
+        anim.SetBool("Dashing", isDashing);
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, Vector2 playerRecoilDirection)
     {
         health -= Mathf.RoundToInt(damage);
-        StartCoroutine(StopTakingDamage());
+        rb.velocity = Vector2.zero;
+        StartCoroutine(StopTakingDamage(playerRecoilDirection));
+        
+        //StartCoroutine(StopTakingDamage());
     }
 
-    IEnumerator StopTakingDamage()
+    IEnumerator StopTakingDamage(Vector2 playerRecoilDirection)
     {
         invincible = true;
         anim.SetTrigger("TakeDamage");
-        //rb.AddForce(-Vector3.right * 5);
+        rb.AddForce(playerRecoilDirection.normalized * recoilForce, ForceMode2D.Impulse);
         ClampHealth();
         yield return new WaitForSeconds(1f);
         invincible = false;
