@@ -1,19 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : CharacterController
 {
     [Header("References")]
+    private Animator anim;
     [Space]
-    public new Rigidbody2D rigidbody; //Reference to the character's Rigidbody component
-    public Animator animator; //Reference to the character's Animator component
 
     [Header("Player Movement Settings")]
-    [Space]
-    [SerializeField] private float jumpForce = 100f;    //Amount of force added when the player jumps
-    [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;    //How much to smooth out the movement
-    public float runSpeed = 40f;
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashTime;
     [SerializeField] private float dashCooldown;
@@ -22,48 +18,50 @@ public class PlayerController : MonoBehaviour
     //private float coyoteTimeCounter;
     private int airJumpCounter  = 0;
     [SerializeField] private int maxAirJumps = 1;
-    
-    [Header("Ground Check Settings")]
     [Space]
-    [SerializeField] private LayerMask whatIsGround;    //A mask determing what is ground to the character 
-    [SerializeField] private Transform groundCheck;     //A position marking where to check if the player is grounded
-    [SerializeField] private Transform ceilingCheck;    //A position marking where to check for ceilings
-    
+
+    [Header("Health Settings")]
+    public int health;
+    public int maxHealth;
+    [Space]
+
     //Private Variables
-    const float groundedRadius = .2f;   //Radius of the overlap circle to determing if grounded
-    const float ceilingRadius = .2f;    //Radius of the overlap circle to determine if the player can stand up
     private float horizontalMove = 0;
     private bool jumpInput = false;
     private bool isDashing = false;
     private bool dashInput = false;
     private bool canDash = true;
     private bool dashed;
-    private bool onAttack;
     private float gravity;
-    private bool facingRight = true;    //For determining which way the player is currently facing
-    private Vector3 velocity = Vector3.zero;
+    public bool invincible;
 
+    public static PlayerController Instance;
 
-    private void Awake()
+    void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        gravity = rigidbody.gravityScale;
+        if(Instance != null && Instance != this) Destroy(gameObject);
+        else Instance = this;
+        health = maxHealth;
+    }
+    protected override void Start()
+    {
+        base.Start();
+        anim = GetComponent<Animator>();
+        gravity = rb.gravityScale; 
     }
 
     void Update()
     {
         GetInput();
-        Debug.Log(airJumpCounter);
-        Debug.Log(jumpInput);
+        Die();
     }
 
     void FixedUpdate()
     {
         if(isDashing) return;
+        Move(horizontalMove * Time.fixedDeltaTime);
         Jump(jumpInput);
         jumpInput = false;
-        Move(horizontalMove * Time.fixedDeltaTime);
         StartDash(dashInput);
     }
 
@@ -71,59 +69,36 @@ public class PlayerController : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         if(Input.GetButtonDown("Jump")) jumpInput = true;
-        if(Input.GetButtonUp("Jump")) jumpInput = false;
+        //if(Input.GetButtonUp("Jump")) jumpInput = false;
         if(Input.GetButtonDown("Dash") && canDash && !dashed)  dashInput = true;
     }
 
-    public bool Grounded()
+    protected override void Move(float move)
     {
-        bool grounded = false;
-
-        //Character is grounded if a circlecast to the groundcheck position hits anything designated as ground
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundedRadius, whatIsGround);
-        for(int i = 0; i < colliders.Length; i++){
-            if(colliders[i].gameObject != gameObject) grounded = true;
-        }
-        return grounded;
-    }
-
-    void Move(float move)
-    {
-        if(Grounded())
-        {
-            //Move the character by finding the target velocity 
-            Vector3 targetVelocity = new Vector3(move * 10f, rigidbody.velocity.y);
-            //And then smoothing it out and applying it to the character
-            rigidbody.velocity = Vector3.SmoothDamp(rigidbody.velocity, targetVelocity, ref velocity, movementSmoothing);
-        }
-        else if(!Grounded())
+        base.Move(move);
+        if(!Grounded())
         {
             //If in the air, we keep control but lose some speed 
-            Vector3 targetVelocity = new Vector3((move * 10f) * .75f, rigidbody.velocity.y);
+            Vector3 targetVelocity = new Vector3(move * 10f * airSpeedReduction, rb.velocity.y);
             //And then smoothing it out and applying it to the character
-            rigidbody.velocity = Vector3.SmoothDamp(rigidbody.velocity, targetVelocity, ref velocity, movementSmoothing);
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, movementSmoothing);
         }
-        //If the input is moving the character right and facing left
-        if(move > 0 && !facingRight) Flip();
-        //otherwise, character is moving left and facing right
-        else if(move < 0 && facingRight) Flip();
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
     }
 
-    void Jump(bool jump){
+    protected override void Jump(bool jump)
+    {
         if(jump && airJumpCounter < maxAirJumps)
         {
-            rigidbody.AddForce(new Vector2(0f, jumpForce));
-            Debug.Log("Here");
-            airJumpCounter++;      
+            base.Jump(jump);
+            airJumpCounter++;
         }
         if(Grounded())
         {
             jumpInput = false;
             airJumpCounter = 0;
         }
-        animator.SetBool("Jumping", !Grounded());
+        anim.SetBool("Jumping", !Grounded());
     }
 
     void StartDash(bool dash)
@@ -140,22 +115,44 @@ public class PlayerController : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
-        animator.SetTrigger("Dashing");
-        rigidbody.gravityScale = 0;
-        if(facingRight) rigidbody.velocity = new Vector2(transform.localScale.x * dashSpeed, 0);
-        else rigidbody.velocity = new Vector2(-transform.localScale.x * dashSpeed, 0);
+        anim.SetTrigger("Dashing");
+        rb.gravityScale = 0;
+        if(facingRight) rb.velocity = new Vector2(transform.localScale.x * dashSpeed, 0);
+        else rb.velocity = new Vector2(-transform.localScale.x * dashSpeed, 0);
         if(Grounded()) Instantiate(dashEffect, transform);
         yield return new WaitForSeconds(dashTime);
-        rigidbody.gravityScale = gravity;
+        rb.gravityScale = gravity;
         dashInput = false;
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
-        animator.ResetTrigger("Dashing");
+        anim.ResetTrigger("Dashing");
     }
-    private void Flip()
+
+    public void TakeDamage(float damage)
     {
-        facingRight = !facingRight;
-        transform.Rotate(0f, 180f, 0f);
+        health -= Mathf.RoundToInt(damage);
+        StartCoroutine(StopTakingDamage());
+    }
+
+    IEnumerator StopTakingDamage()
+    {
+        invincible = true;
+        anim.SetTrigger("TakeDamage");
+        //rb.AddForce(-Vector3.right * 5);
+        ClampHealth();
+        yield return new WaitForSeconds(1f);
+        invincible = false;
+    }
+
+    void Die()
+    {
+       //if(health <= 0) Destroy(gameObject);
+    }
+
+    void ClampHealth()
+    {
+        health = Mathf.Clamp(health,0, maxHealth);
+        //if(onHealthChangedCallback != null) onHealthChangedcallback.Invoke();
     }
 }
