@@ -28,6 +28,7 @@ public class PlayerController : CharacterController
     [Header("Health Settings")]
     public int health;
     public int maxHealth;
+    [SerializeField] GameObject hitSpurt;
     [Space]
 
     //Private Variables
@@ -46,7 +47,7 @@ public class PlayerController : CharacterController
     {
         if(Instance != null && Instance != this) Destroy(gameObject);
         else Instance = this;
-        health = maxHealth;
+        Health = maxHealth;
     }
     protected override void Start()
     {
@@ -137,7 +138,7 @@ public class PlayerController : CharacterController
 
     public void TakeDamage(float damage, Vector2 playerRecoilDirection)
     {
-        health -= Mathf.RoundToInt(damage);
+        Health -= Mathf.RoundToInt(damage);
         rb.velocity = Vector2.zero;
         StartCoroutine(StopTakingDamage(playerRecoilDirection));
         
@@ -148,8 +149,10 @@ public class PlayerController : CharacterController
     {
         invincible = true;
         anim.SetTrigger("TakeDamage");
-        rb.AddForce(playerRecoilDirection.normalized * recoilForce, ForceMode2D.Impulse);
-        ClampHealth();
+        GameObject spurtParticles = Instantiate(hitSpurt, transform.position, Quaternion.identity);
+        Destroy (spurtParticles, 1.5f);
+        rb.velocity = new Vector2(playerRecoilDirection.x * recoilForce, 0);
+        //rb.velocity = new Vector2(playerRecoilDirection.x * recoilForce, playerRecoilDirection.y * recoilForce);
         yield return new WaitForSeconds(1f);
         invincible = false;
     }
@@ -159,9 +162,15 @@ public class PlayerController : CharacterController
        //if(health <= 0) Destroy(gameObject);
     }
 
-    void ClampHealth()
+    public int Health
     {
-        health = Mathf.Clamp(health,0, maxHealth);
-        //if(onHealthChangedCallback != null) onHealthChangedcallback.Invoke();
+        get { return health;}
+        set
+        {
+            if(health != value)
+            {
+                health = Mathf.Clamp(value, 0, maxHealth);
+            }
+        }
     }
 }
